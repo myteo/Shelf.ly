@@ -1,0 +1,31 @@
+<svg id="background">
+
+  <use id="buy-button" href="#square-button-icon" y="1" fill="coral">
+    <set href="#text"  attributeName="text-buffer" to="Buy Nike Flex" />
+    <set href="#image" attributeName="href" to="card.png" />
+  </use>
+  
+  <image id="shoe-image" x="10" y="80" width="100%" href="shoe.png"/>
+
+  <text id="notification" x="50%" y="100" class="large-value"></text>
+  <text id="notification-subtitle" x="50%" y="139" class="small-value"></text>
+  
+  <!-- Promo screen  -->
+  <image id="socks-image" x="0" y="70" height="180" width="100%" href="socks.png"/>
+  <svg y="0">
+    <!-- toggle button NO -->
+    <use id="btn-no" href="#square-button-toggle-icon" fill="fb-red">
+      <set href="button-content/text"  attributeName="text-buffer" to="No" />
+      <set href="button-content/image" attributeName="href" to="no.png"/>
+    </use>
+    <!-- toggle button YES -->
+    <use id="btn-yes" href="#square-button-toggle-icon" x="50%" fill="fb-green">
+      <set href="button-content/text"  attributeName="text-buffer" to="Yes" />
+      <set href="button-content/image" attributeName="href" to="yes.png"/>
+    </use>
+  </svg>
+
+  <!-- Buy screen  -->
+  <image id="card-image" width="100%" href="visa-card.png" pointer-events="visible" />
+  
+</svg>

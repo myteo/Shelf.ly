@@ -1,0 +1,42 @@
+svg {
+    viewport-fill: slategrey;
+}
+
+textarea {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  y: 12;
+  text-length: 1024;
+}
+
+text {
+  text-length: 1200;
+}
+
+.large-value {
+  font-family: System-Regular;
+  font-weight: regular;
+  font-size: 60; 
+  fill: fb-white;
+  width: 100%;
+  text-anchor: middle;
+}
+
+.small-value {
+  font-family: System-Regular;
+  font-weight: regular;
+  font-size: 30;
+  fill: fb-white;
+  width: 100%;
+  text-anchor: middle;
+}
+
+#notification {
+    font-family: Seville-Book;
+    text-anchor: middle;
+    display-align: center;
+    width: 100%;
+    font-size: 21;
+    fill: white;
+}
