@@ -203,8 +203,8 @@ def build_confirm_restock_response(output):
                             'textContent': {
                                 'primaryText': {
                                     'type': 'RichText',
-                                    'text': '<b><u>' + item[
-                                        'name'] + '</u></b>'
+                                    'text': '<b><u><font size="3">' + item[
+                                        'name'] + '</font></u></b>'
                                 },
                                 'secondaryText': {
                                     'type': 'RichText',
@@ -243,7 +243,7 @@ def get_welcome_response():
     session_attributes = {}
     card_title = 'Welcome'
     speech_output = 'Welcome to ' + SKILL_NAME + '. ' \
-                    'What would you like to know?'
+                    'Would you like to get today\'s updates?'
     # If the user either does not reply to the welcome message or says something
     # that is not understood, they will be prompted again with this text.
     reprompt_text = 'Ask me anything about your store, for example: ' \
@@ -264,7 +264,7 @@ def handle_session_end_request():
 def get_stock_updates_from_session():
     session_attributes = {}
     speech_output = 'I found ' + NUM_STOCK_ITEMS + ' items that are low on stock. ' \
-                    'Which items would you like me to order more of?'
+                    'Which items would you like me to order?'
     reprompt_text = 'These items are either out of stock or are about to run' \
                     'out of stock soon. Just let me know if you would like me' \
                     'to restock them for you.'
